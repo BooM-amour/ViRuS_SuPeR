@@ -67,7 +67,7 @@ local function run(msg, matches)
 local url = 'http://latex.codecogs.com/png.latex?'..'\\dpi{'..size..'}%20\\huge%20\\'..font..'{{\\color{'..color..'}'..text..'}}'
 local file = download_to_file(url,'file.webp')
         send_document(msg.to.id , file, ok_cb, false)
-        return "by @BeatBot_Team :)"
+        return "by ViRuS_TeAm"
 end
 
     local receiver = get_receiver(msg)
@@ -83,11 +83,11 @@ end
       if matches[1] == "sticker" then
     	redis:get("photo:sticker")  
         load_photo(msg.reply_id, tosticker, msg)
-        return "by @BeatBot_Team :)"
+        return "by ViRuS_TeAm :)"
       elseif matches[1] == "photo" then
     	redis:get("sticker:photo")  
         load_document(msg.reply_id, toimage, msg)
-     return 'by @BeatBot_Team :)'
+     return 'by ViRuS_TeAm :)'
     end
 end
 
